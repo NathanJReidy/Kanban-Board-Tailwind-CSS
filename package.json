@@ -1,0 +1,25 @@
+{
+  "name": "kanbanProject",
+  "version": "1.0.0",
+  "description": "In this project, I use Tailwind CSS to create a Kanban Board.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanJReidy/Kanban-Board-Tailwind-CSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanJReidy/Kanban-Board-Tailwind-CSS/issues"
+  },
+  "homepage": "https://github.com/NathanJReidy/Kanban-Board-Tailwind-CSS#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}
