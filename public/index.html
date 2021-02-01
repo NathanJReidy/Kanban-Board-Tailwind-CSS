@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="flex h-full">
-    <div class="flex bg-gray-100 w-1/5 border-r flex-shrink-0">
+    <div class="hidden sm:flex bg-gray-100 w-1/5 border-r flex-shrink-0">
         <div class="flex flex-col items-center w-full p-6">
             <div class="flex w-full p-3">
                 <img class="h-9 w-9" src="img/example-logo.svg">
@@ -17,19 +17,19 @@
             </div>
 
 
-            <div class="flex hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
+            <div class="flex flex-wrap hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
                 <p>All</p>
                 <p>39</p>
             </div>
-            <div class="flex hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
+            <div class="flex flex-wrap hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
                 <p>Assigned to me</p>
                 <p>5</p>
             </div>
-            <div class="flex hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
+            <div class="flex flex-wrap hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
                 <p>Created by me</p>
                 <p>3</p>
             </div>
-            <div class="flex hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
+            <div class="flex flex-wrap hover:bg-gray-200 p-3 w-full rounded-lg justify-between text-sm">
                 <p>Archived</p>
                 <p></p>
             </div>
@@ -91,7 +91,7 @@
 
         </div>
 
-        <div class="flex justify-between h-24 py-1 px-4 border-t-2 border-b-2 border-gray-100">
+        <div class="hidden sm:flex justify-between h-24 py-1 px-4 border-t-2 border-b-2 border-gray-100">
 
             <div class="flex items-center">
                 <h1 class="text-2xl font-bold p-3">All Issues</h1>
@@ -116,6 +116,45 @@
 
 
         </div>
+
+        <div class="sm:hidden justify-between h-36 px-4 border-t-2 border-b-2 border-gray-100">
+
+            <div class="flex items-center justify-between">
+                <div class="p-1 flex flex-col">
+                    <h1 class="text-2xl font-bold p-1">All Issues</h1>
+                    <div class="flex">
+                        <img class="h-11 w-11 rounded-full border p-1 bg-gray-200" src="img/superman.svg">
+                        <img class="h-11 w-11 rounded-full border p-1 -ml-3 bg-red-200" src="img/face.svg">
+                        <img class="h-11 w-11 rounded-full border p-1 -ml-3 bg-blue-200" src="img/woman.svg">
+                        <img class="h-11 w-11 rounded-full border p-1 -ml-3 bg-green-200" src="img/woman-2.svg">
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <button class="p-3 bg-black text-white rounded-lg">+ New Issue</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="sm:hidden border-t-2 border-b-2 border-gray-100 flex p-1 mt-1 rounded-lg bg-gray-100">
+                <div class="pt-1 px-2 w-1/2">
+                    <div class="flex justify-center items-center">
+                        <img class="h-8 w-8" src="img/horizontal-menu.svg">
+                        <h1 class="px-2 text-gray-500 font-bold">List</h1>
+                    </div>
+                </div>
+                <div class="pt-1 px-2 bg-white shadow-md rounded-lg w-1/2">
+                    <div class="flex justify-center items-center font-bold">
+                        <img class="h-8 w-8" src="img/vertical-menu.svg">
+                        <h1 class="px-2">Board</h1>
+                    </div>
+                </div>
+        </div>
+
+
 
         <div class="flex overflow-auto h-full p-2">
             <div class="flex flex-col bg-gray-100 w-80 m-4 p-4 rounded-lg border shadow-lg h-screen overflow-auto flex-shrink-0">
